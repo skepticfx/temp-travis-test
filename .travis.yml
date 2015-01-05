@@ -11,5 +11,4 @@ before_script:
   sudo -s
   whoami
 script:
-  whoami
-  npm test
+  whoami && npm test

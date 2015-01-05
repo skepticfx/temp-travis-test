@@ -1,6 +1,15 @@
 var pcap = require("pcap"),
-    pcap_session = pcap.createSession("lo", "");
+    os = require('os');
 
+function getValidInterface(){
+  var list = Object.keys(os.getNetworkInterfaces());
+  for(iface in list){
+    if(list[iface].match(/^lo/i) == null)
+      return list[iface];
+  }
+}
+
+var pcap_session = pcap.createSession(getValidInterface(), "");
 
 console.log("Listening on " + pcap_session.device_name);
 

@@ -7,6 +7,7 @@ branches:
 before_install:
   sudo apt-get install libpcap-dev
 before_script:
-  which npm
+  sudo -s
+  whoami
 script:
   sudo npm test

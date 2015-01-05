@@ -4,7 +4,7 @@ node_js:
 branches:
   only:
     - master
-#before_install:
-#  env
+before_install:
+  sudo apt-get install libpcap-dev
 script:
   sudo /home/travis/.nvm/v0.10.35/bin/npm test

@@ -6,8 +6,10 @@ branches:
     - master
 before_install:
   sudo apt-get install libpcap-dev
+  npm
 before_script:
   sudo -s
   whoami
 script:
+  whoami
   npm test

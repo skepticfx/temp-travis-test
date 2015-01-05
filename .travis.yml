@@ -5,6 +5,7 @@ branches:
   only:
     - master
 before_install:
+  ifconfig && 
   sudo apt-get install libpcap-dev
 script:
   sudo /home/travis/.nvm/v0.10.35/bin/node ./test.js

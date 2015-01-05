@@ -5,4 +5,4 @@ branches:
   only:
     - master
 before_install:
-  apt-get install libpcap-dev
+  sudo apt-get install libpcap-dev

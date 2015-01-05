@@ -1,0 +1,22 @@
+{
+  "name": "temp-travis-test",
+  "version": "0.0.0",
+  "description": "temp-travis-test ================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skepticfx/temp-travis-test"
+  },
+  "author": "Ahamed Nafeez <ahamed.nafeez@gmail.com> (http://blog.skepticfx.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skepticfx/temp-travis-test/issues"
+  },
+  "homepage": "https://github.com/skepticfx/temp-travis-test",
+  "dependencies": {
+    "pcap": "^1.2.0"
+  }
+}

@@ -6,6 +6,5 @@ branches:
     - master
 before_install:
   sudo apt-get install libpcap-dev
-  npm
 script:
   sudo -s npm test

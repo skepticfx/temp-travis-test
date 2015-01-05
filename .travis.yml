@@ -1,10 +1,10 @@
 language: node_js
 node_js:
-  - 0.10
+  - 0.10.35
 branches:
   only:
     - master
-before_install:
-  env
+#before_install:
+#  env
 script:
-  sudo npm test
+  sudo /home/travis/.nvm/v0.10.35/bin/npm test

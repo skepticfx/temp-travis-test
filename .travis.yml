@@ -5,6 +5,6 @@ branches:
   only:
     - master
 before_install:
-  tree /home/travis
+  env
 script:
   sudo npm test

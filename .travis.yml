@@ -7,8 +7,6 @@ branches:
 before_install:
   sudo apt-get install libpcap-dev
 before_script:
-  sudo ln -s /usr/local/bin/node /usr/bin/node
-  sudo ln -s /usr/local/lib/node /usr/lib/node
-  sudo ln -s /usr/local/bin/npm /usr/bin/npm
+  which npm
 script:
   sudo npm test

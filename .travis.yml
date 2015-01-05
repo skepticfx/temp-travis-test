@@ -10,4 +10,4 @@ before_script:
   sudo -s
   whoami
 script:
-  sudo npm test
+  npm test

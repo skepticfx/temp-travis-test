@@ -5,9 +5,6 @@ branches:
   only:
     - master
 before_install:
-  which npm &&
-  where npm &&
-  which node &&
-  pwd 
+  tree /home/travis
 script:
   sudo npm test

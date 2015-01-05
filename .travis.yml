@@ -5,10 +5,9 @@ branches:
   only:
     - master
 before_install:
-  sudo apt-get install libpcap-dev
-  which npm
-  whereis npm
-  which node
-  pwd
+  which npm &&
+  where npm &&
+  which node &&
+  pwd 
 script:
   sudo npm test

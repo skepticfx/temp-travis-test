@@ -4,7 +4,7 @@
   "description": "temp-travis-test ================",
   "main": "index.js",
   "scripts": {
-    "test": "node ./test.js"
+    "test": "mocha ./test.js"
   },
   "repository": {
     "type": "git",

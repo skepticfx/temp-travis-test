@@ -1,5 +1,6 @@
-var pcap = require("pcap"),
-    os = require('os');
+var pcap = require("pcap");
+var os = require('os');
+var should =require('should');
 
 function getValidInterface(){
   var list = Object.keys(os.getNetworkInterfaces());
@@ -9,11 +10,15 @@ function getValidInterface(){
   }
 }
 
-var pcap_session = pcap.createSession(getValidInterface(), "");
+describe('test capture interface', function(){
+  var pcap_session = pcap.createSession(getValidInterface(), "");
+  console.log("Listening on " + pcap_session.device_name);
 
-console.log("Listening on " + pcap_session.device_name);
+  it('capture one packet', function(done){
+    pcap_session.once('packet', function (raw_packet) {
+      var packet = pcap.decode.packet(raw_packet);
+      done();
+    })
+  })
 
-pcap_session.on('packet', function (raw_packet) {
-    var packet = pcap.decode.packet(raw_packet);
-      console.log(raw_packet);
-});
+})

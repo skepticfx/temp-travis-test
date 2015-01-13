@@ -7,4 +7,4 @@ branches:
 before_install:
   sudo apt-get install libpcap-dev
 script:
-  which mocha && sudo mocha ./test.js
+  sudo ./node_modules/.bin/mocha ./test.js

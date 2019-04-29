@@ -20,6 +20,6 @@
     "pcap": "^1.2.0"
   },
   "devDependencies": {
-    "should": "^4.0.4"
+    "should": "4.6.5"
   }
 }

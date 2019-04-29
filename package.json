@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/skepticfx/temp-travis-test",
   "dependencies": {
-    "pcap": "^1.2.0"
+    "pcap": "^2.0.0"
   },
   "devDependencies": {
     "should": "^4.0.4"

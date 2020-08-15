@@ -10,7 +10,6 @@
     "type": "git",
     "url": "https://github.com/skepticfx/temp-travis-test"
   },
-  "author": "Ahamed Nafeez <ahamed.nafeez@gmail.com> (http://blog.skepticfx.com/)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/skepticfx/temp-travis-test/issues"
